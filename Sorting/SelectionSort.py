@@ -1,5 +1,5 @@
 def SelectionSort(arr):
-    minNumber = 100000000
+    
     for i in range(0,len(arr)):
         minIndex = i
         for j in range(minIndex + 1, len(arr)):
@@ -12,6 +12,7 @@ def SelectionSort(arr):
 
         if i != minIndex:
             arr[i],arr[minIndex] = arr[minIndex],arr[i]
+        print(arr)
     return arr
 
     
